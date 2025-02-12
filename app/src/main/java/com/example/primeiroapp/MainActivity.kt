@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.textfield.TextInputEditText
+
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -21,18 +21,20 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val numero1 = findViewById<Button>(R.id.btn1);
+        val numero2 = findViewById<Button>(R.id.btn2);
+        val numero3 = findViewById<Button>(R.id.btn3);
+        val numero4 = findViewById<Button>(R.id.btn4);
+        val numero5 = findViewById<Button>(R.id.btn5);
+        val numero6 = findViewById<Button>(R.id.btn6);
+        val numero7 = findViewById<Button>(R.id.btn7);
+        val numero8 = findViewById<Button>(R.id.btn8);
+        val numero9 = findViewById<Button>(R.id.btn9);
+        val numero0 = findViewById<Button>(R.id.btn0);
+        val resultado = findViewById<TextView>(R.id.txtResult);
 
-        val btnBotao: Button = findViewById(R.id.btnBotao)
-        val Num1: TextInputEditText = findViewById(R.id.txtNum1) // Alterado para TextInputEditText
-        val Num2: TextInputEditText = findViewById(R.id.txtNum2) // Alterado para TextInputEditText
-        val Resultado: TextView = findViewById(R.id.txtResultado)
-
-        btnBotao.setOnClickListener {
-            val ValorNumero1 = Num1.text?.toString()?.toDoubleOrNull() ?: 0.0 // Removido .editText
-            val ValorNumero2 = Num2.text?.toString()?.toDoubleOrNull() ?: 0.0 // Removido .editText
-            val Operacao = ValorNumero1 + ValorNumero2
-            Resultado.text = "Resultado: ${Operacao}"
-
+        numero1.setOnClickListener{
+           resultado.text = resultado.text.toString() + "1";
         }
 
     }
