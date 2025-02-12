@@ -32,6 +32,21 @@
         app:layout_constraintVertical_bias="0.793" />
 
     <Button
+        android:id="@+id/btnClear"
+        android:layout_width="123dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#39ADAB"
+        android:text="C"
+        android:textSize="80px"
+        app:cornerRadius="0px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
         android:id="@+id/btn1"
         android:layout_width="126dp"
         android:layout_height="112dp"
@@ -251,6 +266,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.112" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

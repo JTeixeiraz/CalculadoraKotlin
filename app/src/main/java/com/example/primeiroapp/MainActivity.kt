@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val limpa = findViewById<Button>(R.id.btnClear)
         val numero1 = findViewById<Button>(R.id.btn1);
         val numero2 = findViewById<Button>(R.id.btn2);
         val numero3 = findViewById<Button>(R.id.btn3);
@@ -36,6 +37,35 @@ class MainActivity : AppCompatActivity() {
         numero1.setOnClickListener{
            resultado.text = resultado.text.toString() + "1";
         }
-
+        numero2.setOnClickListener{
+            resultado.text = resultado.text.toString() + "2";
+        }
+        numero3.setOnClickListener{
+            resultado.text = resultado.text.toString() + "3";
+        }
+        numero4.setOnClickListener{
+            resultado.text = resultado.text.toString() + "4";
+        }
+        numero5.setOnClickListener{
+            resultado.text = resultado.text.toString() + "5";
+        }
+        numero6.setOnClickListener{
+            resultado.text = resultado.text.toString() + "6";
+        }
+        numero7.setOnClickListener{
+            resultado.text = resultado.text.toString() + "7";
+        }
+        numero8.setOnClickListener{
+            resultado.text = resultado.text.toString() + "8";
+        }
+        numero9.setOnClickListener{
+            resultado.text = resultado.text.toString() + "9";
+        }
+        numero0.setOnClickListener{
+            resultado.text = resultado.text.toString() + "0";
+        }
+        limpa.setOnClickListener{
+            resultado.text = "";
+        }
     }
 }
